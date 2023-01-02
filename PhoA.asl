@@ -36,6 +36,7 @@ startup {
         {"Wrecker",                 Tuple.Create(true,      41)},
         {"Thomas Kidnapped",        Tuple.Create(false,     43)},
         {"Katash 1",                Tuple.Create(true,      507)},
+        {"Leo saved",               Tuple.Create(false,     58)},
         {"Tower of Dog",            Tuple.Create(true,      553)}, // TODO: Verify which tower is which flag
         {"Tower of the King",       Tuple.Create(true,      552)},
         {"Tower of the Queen",      Tuple.Create(true,      551)},
@@ -48,15 +49,21 @@ startup {
     vars.roomMeta = new Dictionary<string, Tuple<bool,string>> { // key: (default setting, room)
         {"Enter Doki Forest",       Tuple.Create(false,     "p1_duri_forest_01")},
         {"Enter Atai Region",       Tuple.Create(false,     "P1_world_map_SW")} ,
+        {"Enter Atai City",         Tuple.Create(false,     "p1_atai_city_01")} ,
         {"Bridge Skip",             Tuple.Create(true,      "p1_bridge_daetai_02")},
         {"Enter Daea Region",       Tuple.Create(false,     "p1_world_map_c")},
         {"Enter Aqua Line",         Tuple.Create(false,     "P1_daea_sewers_01")}, // yup some of these have capital P's for no discernable reason
         {"Enter Castle Dungeons",   Tuple.Create(false,     "P1_dungeon_00")},
         {"Enter Cosette Region",    Tuple.Create(false,     "p1_world_map_c2")},
         {"Enter Scorchlands",       Tuple.Create(true,      "p1_scorchlands_00")},
+        {"Leave Scorchlands",       Tuple.Create(false,     "p1_scorchlands_08")},
         {"Enter Mul Caves",         Tuple.Create(true,      "p1_mul_cave_00")},
+        {"Leave Mul Caves",         Tuple.Create(true,      "p1_mul_caves_10")},
         {"Enter SPHERE",            Tuple.Create(false,     "p1_sphere_garden_01")},
-        {"Enter E.D.E.N.",          Tuple.Create(false,     "p1_pristine_city_hub")}
+        {"Leave SPHERE trial left", Tuple.Create(false,     "p1_sphere_garden_02")},
+        {"Enter Pristine City",     Tuple.Create(false,     "p1_pristine_city_hub")},
+        {"Enter E.D.E.N.",          Tuple.Create(false,     "p1_phoenix_station")},
+        {"Enter Final save room",   Tuple.Create(false,     "p1_phoenix_lab_final_03")}
     };
     vars.visited = new List<string>();
     
